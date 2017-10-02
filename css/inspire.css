@@ -87,7 +87,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url("../images/amazing-736888.jpg") center center no-repeat fixed;
+    background: url("/images/amazing-736888.jpg") center center no-repeat fixed;
     background-size: cover;
 }
 
