@@ -1,0 +1,385 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/***********************************************************************************************************************
+                                                Global Styles
+***********************************************************************************************************************/
+h1 {
+    font-family: 'Vidaloka', serif;
+    font-size: 5em;
+    color: #e6e6e6;
+}
+
+a, p, h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    color: #e6e6e6;
+}
+
+a {
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 1em;
+    transition: color .3s ease-in-out;
+}
+
+a:hover {
+    color: #637B2E;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+p {
+    text-align: center;
+}
+
+.link-container {
+    background-color: #33485B;
+    width: 30%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.link-container a {
+    text-align: center;
+}
+
+.heading-div, .join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: #33485B;
+    margin-bottom: 1em;
+}
+
+.heading-div h3 {
+    color: #e6e6e6;
+}
+
+/***********************************************************************************************************************
+                                                Header Styles
+***********************************************************************************************************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../images/amazing-736888.jpg") center center no-repeat fixed;
+    background-size: cover;
+}
+
+header .link-container {
+    margin-top: 2em;
+}
+
+header p {
+    color: #e6e6e6;
+    font-size: 1.3em;
+}
+
+
+/*****************************
+        Nav Styles
+*****************************/
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #33485B;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-button {
+    position: fixed;
+    align-self: flex-end;
+}
+
+.nav-button button {
+    background-color: #33485B;
+    color: #e6e6e6;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin: .5em;
+}
+
+.main-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-nav a {
+    margin-bottom: .5em;
+}
+
+.logo {
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.current {
+    color: #637B2E;
+}
+
+header .link-container {
+    margin-bottom: 1em;
+}
+
+/***********************************************************************************************************************
+                                                "About" Styles
+***********************************************************************************************************************/
+.about-div {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/***********************************************************************************************************************
+                                                Inspire Yourself/Inspire Others Styles
+***********************************************************************************************************************/
+
+.inspire-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.inspire-yourself, .inspire-others {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.inspire-image {
+    height: 200px;
+    background: url("../images/amazing-736888_640.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.link-container {
+    width: 35%;
+}
+
+/***********************************************************************************************************************
+                                                Join(Mailing list) Styles
+***********************************************************************************************************************/
+.join {
+    height: auto;
+}
+
+.join p {
+    color: #e6e6e6;
+}
+
+input {
+    width: 90%;
+    padding: .5em;
+}
+
+.submit-button {
+    width: 30%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.submit-button button {
+    background-color: #637B2E;
+    color: #e6e6e6;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/***********************************************************************************************************************
+                                                Footer Styles
+***********************************************************************************************************************/
+
+footer {
+    background-color: #33485B;
+}
+
+footer p {
+    color: #e6e6e6;
+}
+
+.inspire p:first-of-type {
+    font-size: 1.5em;
+}
+
+
+/***********************************************************************************************************************
+                                                Media Queries
+***********************************************************************************************************************/
+
+@media (min-width: 554px) {
+
+    /*****************************
+            Global Styles
+    *****************************/
+
+    .para-container {
+        width: 70%;
+    }
+
+    .link-container {
+        width: 25%;
+    }
+
+    /*****************************
+            Inspire Styles
+    *****************************/
+
+    .inspire-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inspire-container > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inspire-container > div P {
+        width: 70%;
+    }
+
+    .inspire-container > div:first-of-type p {
+        width: 80%;
+    }
+
+    .inspire-yourself, .inspire-others {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inspire-image {
+        width: 70%;
+    }
+
+    /*****************************
+           Join Styles
+   *****************************/
+    input {
+        width: 60%;
+    }
+
+    .submit-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 822px) {
+    /*****************************
+           Header Styles
+   *****************************/
+    header .link-container {
+        width: 15%;
+    }
+
+    /*****************************
+           Inspire Styles
+   *****************************/
+    .inspire-container > div:last-of-type {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inspire-container > div:first-of-type p {
+        width: 70%;
+    }
+
+    .link-container {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /*****************************
+           Global Styles
+    *****************************/
+
+    .para-container {
+        width: 50%;
+    }
+
+    .inspire-container > div:first-of-type p {
+        width: 40%;
+    }
+
+    /*****************************
+            Nav Styles
+    *****************************/
+    .nav-container {
+        min-height: 2.7em;
+        justify-content: center;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-nav a {
+        margin-left: 1em;
+    }
+
+    .main-nav a:last-of-type {
+        margin-right: 1em;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+
+
+    /*****************************
+           Join Styles
+   *****************************/
+    input {
+        width: 30%;
+    }
+
+}
